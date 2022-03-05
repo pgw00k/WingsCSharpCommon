@@ -1,0 +1,23 @@
+{
+  "name": "com.wings.unity.ui",
+  "version": "1.0.0",
+  "displayName": "Wings Unity UI",
+  "description": "Wings GenOcean Game Unity UI Scripts.",
+  "unity": "2020.2",
+  "unityRelease": "7f1",
+  "documentationUrl": "https://github.com/wings/",
+  "changelogUrl": "https://github.com/wings/",
+  "licensesUrl": "https://github.com/wings/",
+  "dependencies": {
+  },
+  "keywords": [
+    "wings",
+    "ui",
+    "genocean"
+  ],
+  "author": {
+    "name": "Wings",
+    "email": "395085356@qq.com",
+    "url": "https://github.com/wings/"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "wings.genocean.unity.assetbundle",
+    "rootNamespace": "GenOcean.Assetbundle",
+    "references": [
+        "wings.genocean.unity.common"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
