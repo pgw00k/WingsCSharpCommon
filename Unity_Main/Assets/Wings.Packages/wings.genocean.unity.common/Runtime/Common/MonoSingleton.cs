@@ -18,35 +18,38 @@ namespace GenOcean.Common
 
     public class MonoSingleTonManager
     {
-        protected static Dictionary<Type, MonoBehaviour> _SingleObjects = new Dictionary<Type, MonoBehaviour>();
+        protected static Dictionary<Type, IMonoSingleObject> _SingleObjects = new Dictionary<Type, IMonoSingleObject>();
 
         public static T GetInstance<T>()
-            where T : MonoBehaviour
+            where T : IMonoSingleObject
         {
-            T obj = null;
-            if (_SingleObjects.TryGetValue(typeof(T),out MonoBehaviour mono))
+            T obj = default(T);
+            if (_SingleObjects.TryGetValue(typeof(T),out IMonoSingleObject mono))
             {
-                obj = mono as T;
+                obj = (T)mono;
             }
 
             return obj;
         }
 
-        public static void SetInstance<T>(T obj)
-            where T : MonoBehaviour
+        public static void SetInstance(object obj,Type type)
         {
-            if (!_SingleObjects.TryGetValue(typeof(T), out MonoBehaviour mono))
+            if (!_SingleObjects.TryGetValue(type, out IMonoSingleObject mono))
             {
-                
-            }else
+                _SingleObjects.Add(type, (IMonoSingleObject)obj);
+            }
+            else
             {
-                T oldIns = mono as T;
+                IMonoSingleObject oldIns = mono;
             }
         }
 
         public static void ReleaseInstance<T>()
         {
-
+            if (_SingleObjects.TryGetValue(typeof(T), out IMonoSingleObject mono))
+            {
+                _SingleObjects.Remove(typeof(T));
+            }
         }
     }
 
@@ -54,7 +57,7 @@ namespace GenOcean.Common
     /// Mono µ¥Àý£¬¼Ì³Ð×Ô MonoBehaviour
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
+    public class MonoSingleton<T> : MonoBehaviour, IMonoSingleObject where T : MonoBehaviour
     {
         #region Protected Fields
 
@@ -116,6 +119,7 @@ namespace GenOcean.Common
                 else
                 {
                     _Instance = GetComponent<T>();
+                    MonoSingleTonManager.SetInstance(this,this.GetType());
                 }
             }
         }
