@@ -1,3 +1,0 @@
-[submodule "OtherProj/xlua"]
-	path = OtherProj/xlua
-	url = git@github.com:Tencent/xLua.git
