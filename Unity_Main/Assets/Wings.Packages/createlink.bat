@@ -15,14 +15,16 @@ pushd "%CD%"
 CD /D "%~dp0"
 
 cd ..\..\..\
-rd /s /q Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src
-rd /s /q Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Plugins
-mklink /D Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src %cd%\OtherProj\xlua\Assets\XLua\Src
-mklink /D Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Plugins %cd%\OtherProj\xlua\Assets\Plugins
 
 del /f /q *.* Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef
 del /f /q *.* Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef.meta
-mklink  Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef Reference\wings.genocean.unity.xlua\Editor\XLua.Editor.asmdef
-mklink  Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef.meta Reference\wings.genocean.unity.xlua\Editor\XLua.Editor.asmdef.meta
+
+rd /s /q Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src
+rd /s /q Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Plugins
+
+mklink /D Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src %cd%\OtherProj\xlua\Assets\XLua\Src
+mklink /D Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Plugins %cd%\OtherProj\xlua\Assets\Plugins
+mklink /H Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef Reference\wings.genocean.unity.xlua\Editor\XLua.Editor.asmdef
+mklink /H Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef.meta Reference\wings.genocean.unity.xlua\Editor\XLua.Editor.asmdef.meta
 
 pause

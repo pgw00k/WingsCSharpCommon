@@ -5,6 +5,14 @@ using UnityEngine.UI;
 
 namespace GenOcean.UI
 {
+    /// <summary>
+    /// Layers:
+    /// <para>0 - PanelLayer</para>
+    /// <para>1 - TipLayer</para>
+    /// <para>2 - BackGroundLayer</para>
+    /// <para>3 - ExternalLayer</para>
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     [RequireComponent(typeof(Canvas))]
     public partial class BaseCanvas<T> : MonoBehaviour, IBaseCanvas<T>
         where T : MonoBehaviour, IBasePanel
@@ -14,8 +22,15 @@ namespace GenOcean.UI
         /// </summary>
         public RectTransform CanvasRoot;
 
-        public RectTransform[] Layers;
 
+        /// <summary>
+        /// Layers:
+        /// <para>0 - PanelLayer</para>
+        /// <para>1 - TipLayer</para>
+        /// <para>2 - BackGroundLayer</para>
+        /// <para>3 - ExternalLayer</para>
+        /// </summary>
+        public RectTransform[] Layers;
 
         #region 自定义层级
 
