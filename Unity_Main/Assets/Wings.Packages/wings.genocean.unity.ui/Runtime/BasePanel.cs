@@ -172,7 +172,7 @@ namespace GenOcean.UI
 
             if(OnOpenPanel != null)
             {
-                //OnOpenPanel.Invoke();
+                OnOpenPanel.Invoke();
             }
         }
 
@@ -214,23 +214,14 @@ namespace GenOcean.UI
         }
 
         /// <summary>
-        /// 打开一个新面板（叠加不替换）
-        /// </summary>
-        /// <param name="PanelName"></param>
-        public virtual void OpenOtherPanel(string PanelName)
-        {
-            OpenOtherPanel(PanelName, null);
-        }
-
-        /// <summary>
         /// 切换到新面板（替换不保留）
         /// </summary>
         /// <param name="PanelName"></param>
-        public virtual void SwitchToOtherPanel(string PanelName)
+        public virtual void SwitchToOtherPanel(string PanelName,object data = null)
         {
             if (PanelName != name)
             {
-                _Canvas.SwitchToOtherPanel(PanelName);
+                _Canvas.SwitchToOtherPanel(PanelName,data);
             }
         }
 

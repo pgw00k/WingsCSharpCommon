@@ -152,12 +152,12 @@ namespace GenOcean.UI
 #endif
                 if (oldPanel.name == PanelName)
                 {
-                    _CurrentPanels.Pop();
+                    oldPanel = _CurrentPanels.Pop();
                 }
 #if UNITY_EDITOR || DEV_TEST
                 else
                 {
-                    Debug.Log($"Try to close {oldPanel.name} but get {oldPanel.name}");
+                    Debug.Log($"Try to close {PanelName} but get {oldPanel.name}");
                 }          
 #endif
             }

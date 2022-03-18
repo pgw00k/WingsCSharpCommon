@@ -77,7 +77,7 @@ namespace GenOcean.UI
                 _Panels.Add(PanelName, newPanel);
             }
 
-            return OpenExistPanel(PanelName);
+            return OpenExistPanel(PanelName,data);
         }
 
 #endregion --Public Fields
