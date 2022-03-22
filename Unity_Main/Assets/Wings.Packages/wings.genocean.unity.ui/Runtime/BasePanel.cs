@@ -202,11 +202,11 @@ namespace GenOcean.UI
         /// 打开一个新面板（叠加不替换）
         /// </summary>
         /// <param name="PanelName"></param>
-        public virtual void OpenOtherPanel(string PanelName,object data = null)
+        public virtual void OpenOtherPanel(string PanelName,bool isRefresh = true,object data = null)
         {
             if(PanelName != name)
             {
-                _Canvas.OpenOtherPanel(PanelName,data);
+                _Canvas.OpenOtherPanel(PanelName,isRefresh,data);
             }else
             {
                 Debug.LogWarningFormat("{0}.OpenOtherPanel try to open {1} is same as self.", name, PanelName);
@@ -217,11 +217,11 @@ namespace GenOcean.UI
         /// 切换到新面板（替换不保留）
         /// </summary>
         /// <param name="PanelName"></param>
-        public virtual void SwitchToOtherPanel(string PanelName,object data = null)
+        public virtual void SwitchToOtherPanel(string PanelName, bool isRefresh = true,object data = null)
         {
             if (PanelName != name)
             {
-                _Canvas.SwitchToOtherPanel(PanelName,data);
+                _Canvas.SwitchToOtherPanel(PanelName,isRefresh,data);
             }
         }
 

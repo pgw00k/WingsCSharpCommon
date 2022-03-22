@@ -42,7 +42,7 @@ namespace GenOcean.UI
         /// 切换一个面板（替换栈顶的面板）
         /// </summary>
         /// <param name="PanelName"></param>
-        public virtual T SwitchPanel(string PanelName, object data = null)
+        public virtual T SwitchPanel(string PanelName, bool isRefresh = true, object data = null)
         {
             T oldPanel = null;
             if (_CurrentPanels.Count > 0)
@@ -54,7 +54,7 @@ namespace GenOcean.UI
 #endif
             }
 
-            T newPanel = OpenPanel(PanelName, data);
+            T newPanel = OpenPanel(PanelName,isRefresh ,data);
 
             if (oldPanel != null)
             {
@@ -68,7 +68,7 @@ namespace GenOcean.UI
         /// 打开一个新面板
         /// </summary>
         /// <param name="PanelName"></param>
-        public virtual T OpenPanel(string PanelName, object data = null)
+        public virtual T OpenPanel(string PanelName, bool isRefresh = true, object data = null)
         {
             if (!_Panels.ContainsKey(PanelName))
             {

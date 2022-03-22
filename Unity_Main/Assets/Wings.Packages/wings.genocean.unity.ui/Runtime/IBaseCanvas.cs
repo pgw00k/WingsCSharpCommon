@@ -17,12 +17,12 @@ namespace GenOcean.UI
         /// 打开另外一个面板
         /// </summary>
         /// <param name="PanelName"></param>
-        public void OpenOtherPanel(string PanelName, object data = null);
+        public void OpenOtherPanel(string PanelName, bool isRefresh = true,object data = null);
 
         /// <summary>
         /// 切换到一个新面板
         /// </summary>
-        public void SwitchToOtherPanel(string PanelName, object data = null);
+        public void SwitchToOtherPanel(string PanelName,bool isRefresh = true, object data = null);
 
         /// <summary>
         /// 关闭一个面板
@@ -51,13 +51,13 @@ namespace GenOcean.UI
         /// 切换一个面板（替换栈顶的面板）
         /// </summary>
         /// <param name="PanelName"></param>
-        public T SwitchPanel(string PanelName, object data = null);
+        public T SwitchPanel(string PanelName, bool isRefresh = true,object data = null);
 
         /// <summary>
         /// 打开一个新面板
         /// </summary>
         /// <param name="PanelName"></param>
-        public T OpenPanel(string PanelName, object data = null);
+        public T OpenPanel(string PanelName, bool isRefresh = true, object data = null);
     }
 
 #else

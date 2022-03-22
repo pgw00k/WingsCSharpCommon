@@ -163,14 +163,14 @@ namespace GenOcean.UI
             }
         }
 
-        public virtual void OpenOtherPanel(string PanelName, object data = null)
+        public virtual void OpenOtherPanel(string PanelName, bool isRefresh = true,object data = null)
         {
-            OpenPanel(PanelName, data);
+            OpenPanel(PanelName, isRefresh, data);
         }
 
-        public virtual void SwitchToOtherPanel(string PanelName, object data = null)
+        public virtual void SwitchToOtherPanel(string PanelName, bool isRefresh = true, object data = null)
         {
-            SwitchPanel(PanelName, data);
+            SwitchPanel(PanelName,isRefresh, data);
         }
 
         /// <summary>
