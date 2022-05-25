@@ -27,4 +27,6 @@ mklink /D Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Plugins %cd
 mklink /H Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef Reference\wings.genocean.unity.xlua\Editor\XLua.Editor.asmdef
 mklink /H Unity_Main\Assets\Wings.Packages\wings.genocean.unity.xlua\Runtime\Src\Editor\XLua.Editor.asmdef.meta Reference\wings.genocean.unity.xlua\Editor\XLua.Editor.asmdef.meta
 
+mklink /D Unity_Main\Assets\Wings.Packages\wings.genocean.cs.common\Runtime\Common %cd%\OtherProj\WingsCSharp\WingsCSharp\Common
+
 pause
