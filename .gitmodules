@@ -1,0 +1,6 @@
+[submodule "OtherProj/WingsCSharp"]
+	path = OtherProj/WingsCSharp
+	url = git@github.com:pgw00k/WingsCSharp.git
+[submodule "OtherProj/xlua"]
+	path = OtherProj/xlua
+	url = git@github.com:Tencent/xLua.git
