@@ -1,0 +1,22 @@
+{
+  "name": "com.wings.unity.uiextension",
+  "version": "1.0.0",
+  "displayName": "Wings Unity UI Extension",
+  "description": "Wings Unity UI Scripts.",
+  "unity": "2020.2",
+  "unityRelease": "7f1",
+  "documentationUrl": "https://github.com/wings/",
+  "changelogUrl": "https://github.com/wings/",
+  "licensesUrl": "https://github.com/wings/",
+  "dependencies": {
+  },
+  "keywords": [
+    "wings",
+    "ui"
+  ],
+  "author": {
+    "name": "Wings",
+    "email": "395085356@qq.com",
+    "url": "https://github.com/wings/"
+  }
+}

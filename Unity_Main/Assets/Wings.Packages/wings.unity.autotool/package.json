@@ -1,0 +1,22 @@
+{
+  "name": "wings.unity.autotool",
+  "version": "1.0.0",
+  "displayName": "Wings Auto Tool",
+  "description": "Wings Unity Auto Setter Toolset.",
+  "unity": "2021.3",
+  "unityRelease": "2f1",
+  "documentationUrl": "https://github.com/wings/",
+  "changelogUrl": "https://github.com/wings/",
+  "licensesUrl": "https://github.com/wings/",
+  "dependencies": {
+  },
+  "keywords": [
+    "wings",
+    "auto"
+  ],
+  "author": {
+    "name": "Wings",
+    "email": "395085356@qq.com",
+    "url": "https://github.com/wings/"
+  }
+}

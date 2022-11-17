@@ -1,0 +1,16 @@
+{
+    "name": "wings.genocean.character.control.Editor",
+    "rootNamespace": "GenOcean.Unity.Editor.Character",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
