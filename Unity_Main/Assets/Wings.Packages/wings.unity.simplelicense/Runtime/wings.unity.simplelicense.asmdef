@@ -1,0 +1,17 @@
+{
+    "name": "wings.unity.simplelicense",
+    "rootNamespace": "Wings",
+    "references": [
+        "wings.genocean.cs.common",
+        "wings.cs.extension"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

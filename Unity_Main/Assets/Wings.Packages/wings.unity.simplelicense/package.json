@@ -1,0 +1,24 @@
+{
+  "name": "wings.unity.simplelicense",
+  "version": "1.0.0",
+  "displayName": "Wings Simple License",
+  "description": "",
+  "unity": "2021.3",
+  "unityRelease": "2f1",
+  "documentationUrl": "https://github.com/wings/",
+  "changelogUrl": "https://github.com/wings/",
+  "licensesUrl": "https://github.com/wings/",
+  "dependencies": {
+    wings.genocean.cs.common,
+    wings.cs.extension
+  },
+  "keywords": [
+    "wings",
+    "license"
+  ],
+  "author": {
+    "name": "Wings",
+    "email": "395085356@qq.com",
+    "url": "https://github.com/wings/"
+  }
+}
