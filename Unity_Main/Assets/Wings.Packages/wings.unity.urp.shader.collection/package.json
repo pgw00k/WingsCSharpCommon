@@ -1,0 +1,23 @@
+{
+  "name": "wings.unity.urp.shader.collection",
+  "version": "1.0.0",
+  "displayName": "Wings Unity Shader(URP) Collection",
+  "description": "",
+  "unity": "2021.3",
+  "unityRelease": "2f1",
+  "documentationUrl": "https://github.com/wings/",
+  "changelogUrl": "https://github.com/wings/",
+  "licensesUrl": "https://github.com/wings/",
+  "dependencies": {
+  },
+  "keywords": [
+    "wings",
+    "shader",
+    "urp"
+  ],
+  "author": {
+    "name": "Wings",
+    "email": "395085356@qq.com",
+    "url": "https://github.com/wings/"
+  }
+}
