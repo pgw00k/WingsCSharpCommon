@@ -14,7 +14,7 @@ using GenOcean.Common;
 
 namespace GenOcean.GameFrame
 {
-    public class SingleDefaultEventManager : SingleEventManager<EventManager>
+    public class SingleDefaultEventManager : SingleEventManager
     {
     }
 

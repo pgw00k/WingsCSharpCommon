@@ -103,8 +103,12 @@ namespace Wings
                     _OnUpdateTimeSuccess.Invoke();
                 }catch(Exception err)
                 {
+#if UNITY_EDITOR
+                    Debug.LogError($"Invoke  _OnUpdateTimeSuccess : {err.Message}");
+#endif
                 }
-            }else
+            }
+            else
             {
                 try
                 {
@@ -112,7 +116,9 @@ namespace Wings
                 }
                 catch (Exception err)
                 {
-
+#if UNITY_EDITOR
+                    Debug.LogError($"Invoke  _OnUpdateTimeFailed : {err.Message}");
+#endif
                 }
             }
         }
@@ -135,9 +141,13 @@ namespace Wings
                 TimeSpan ts2 = _Time.Subtract(dt);
 
                 isOk = ts2.TotalDays < 5 && ts2.TotalDays > 0;
-                    
+
+#if UNITY_EDITOR
+                Debug.Log($"CheckTimeLiencese : {ts2.TotalDays}");
+#endif
+
             }
-            catch(Exception err)
+            catch (Exception err)
             {
                 isOk = false;
             }

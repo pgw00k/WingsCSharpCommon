@@ -4,3 +4,6 @@
 [submodule "OtherProj/xlua"]
 	path = OtherProj/xlua
 	url = git@github.com:Tencent/xLua.git
+[submodule "OtherProj/Wings.Unity.HackerTool"]
+	path = OtherProj/Wings.Unity.HackerTool
+	url = git@github.com:pgw00k/Wings.Unity.HackerTool.git

@@ -1,7 +1,7 @@
 {
-  "name": "wings.unity.simplelicense",
+  "name": "wings.unity.hackertool",
   "version": "1.0.0",
-  "displayName": "Wings Simple License",
+  "displayName": "Wings Hacker Tool",
   "description": "",
   "unity": "2021.3",
   "unityRelease": "2f1",
@@ -9,12 +9,10 @@
   "changelogUrl": "https://github.com/wings/",
   "licensesUrl": "https://github.com/wings/",
   "dependencies": {
-    "wings.genocean.cs.common":"1.0.0",
-    "wings.cs.extension":"1.0.0"
   },
   "keywords": [
     "wings",
-    "license"
+    "hack"
   ],
   "author": {
     "name": "Wings",

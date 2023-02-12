@@ -1,0 +1,16 @@
+{
+    "name": "wings.unity.hackertool",
+    "rootNamespace": "Wings",
+    "references": [
+        "wings.genocean.cs.common"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

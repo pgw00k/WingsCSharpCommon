@@ -186,6 +186,11 @@ namespace GenOcean.GameFrame
             targetCamOffset.x = x;
         }
 
+        public virtual void SetZCamOffset(float v)
+        {
+            targetCamOffset.z = v;
+        }
+
         public virtual void SetMaxVerticalAngle(float angle)
         {
             targetMaxVerticalAngle = angle;

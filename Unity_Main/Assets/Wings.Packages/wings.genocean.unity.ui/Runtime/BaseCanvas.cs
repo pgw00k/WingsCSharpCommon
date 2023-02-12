@@ -184,19 +184,26 @@ namespace GenOcean.UI
             if (_CurrentPanels.Count > 0)
             {
                 oldPanel = _CurrentPanels.Pop();
+                oldPanel.Close();
 
-                if(!string.IsNullOrEmpty(oldPanel.ParentPanelName))
-                {
-                    oldPanel.Close();
 #if UNITY_EDITOR || DEV_TEST
-                    Debug.Log($"Try to close {oldPanel.name}");
+                Debug.Log($"Try to close {oldPanel.name}");
 #endif
 
+                if (!string.IsNullOrEmpty(oldPanel.ParentPanelName))
+                {                    
                     OpenPanel(oldPanel.ParentPanelName);
-                }else
-                {
-                    newPanel = oldPanel;
                 }
+                else if (_CurrentPanels.Count > 0)
+                {
+                    newPanel = _CurrentPanels.Pop();
+                    OpenPanel(newPanel.name);
+                }
+            }else
+            {
+#if UNITY_EDITOR || DEV_TEST
+                Debug.Log($"There is no Panel can close.");
+#endif
             }
         }
 
